@@ -1,5 +1,5 @@
 # some fundamental tips:  
-###Q: how to use sql in a other kinds of coding language?  
+### Q: how to use sql in a other kinds of coding language?  
 A: //创建语句  
    MySqlCommand cmd = new MySqlCommand("insert into user set username='" + username + "'" + ",password='"+password+"'",conn);  
    //执行语句  
