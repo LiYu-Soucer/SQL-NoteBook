@@ -1,14 +1,23 @@
+# some fundamental tips:  
+###Q: how to use sql in a other kinds of coding language?  
+A: //创建语句  
+   MySqlCommand cmd = new MySqlCommand("insert into user set username='" + username + "'" + ",password='"+password+"'",conn);  
+   //执行语句  
+   cmd.ExecuteNonQuery();  
+   
 The error-#1046 - No database selected
 can occur when we are creating a table, but forget to select the database. 
 so how can we select the database:
->use business
+>use business    
+
 !business is the name of your chosen database.
-After using database ‘business’, we can create the above table and we will not get any error:
-mysql> CREATE table TblUni
--> (
--> id int,
--> Name varchar(100)
--> );
+After using database ‘business’, we can create the above table and we will not get any error:  
+>
+mysql> CREATE table TblUni  
+-> (  
+-> id int,  
+-> Name varchar(100)  
+-> );    
 Query OK, 0 rows affected (0.50 sec)
 
 You need to know that:
